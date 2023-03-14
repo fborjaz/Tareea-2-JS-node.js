@@ -1,0 +1,62 @@
+Todos los ejercicios tienen que realizar funciones con parametros y retornos
+en los casos que amerita. Vea los ejercicios hechos en la ultima clase
+Nota: se calificará la reutilizacion de funciones
+
+1) Dado una serie de numeros presentar la suma de los numeros perfectos
+ejemplo
+serie=[6,5,25,24,28]
+respuesta=6+24=30
+2) Dado una serie de numeros presentar los numeros primos
+ejemplo
+serie=[6,5,25,7,28]
+respuesta==5,7
+3) Elaborar una funcion que reciba dos valores base y exponente. la funcion 
+debera retornar la base elevada al exponente 
+ejemplo: base=5  exponente=3
+                 respuesta= 5*5*5=125
+4) Dado una serie de numeros presentar el exponente de cada numero elavado 
+a su propio numero 
+ejemplo:
+       serie=[4,3,2,5]
+       resp=  4^4=  256,27,4,625
+5)elaborar una funcion de la tabla de multiplicar de cualquier base del 1 al  12
+   base=5
+   respuesta= 5*1=5
+                        5*2=10
+                         ....
+                         5*12=60
+6) Realizar una funcion que retorne un arreglo con los divisores de cualquier numero de 
+cualquier valor inicial 
+    ejemplo: numero=12   valorInicial=4
+                     divisores= [4,6]
+
+7) Realizar una funcion que retorne la suma de los divisores de cualquier numero de 
+cualquier valor inicial 
+    ejemplo: numero=12   valorInicial=4
+                     divisores= 4+6=10
+8) Realizar una funcion que retorne un arreglo con los digitos de cualquier numero
+    Ejemplo:  numero=32456
+                      respuesta=[6,5,4,2,3]
+9) Dado un numero presente la  suma de sus digitos
+Ejemplo:  numero=32456
+                      respuesta=3+2+4+5+6=20
+10) Dado un numero presente los digitos pares
+Ejemplo:  numero=32456
+                      respuesta=2,4,6
+11) Dado un numero presente su primer digito
+Ejemplo:  numero=32456
+                      respuesta=3
+12) Dado un numero presente el ultimo digito
+Ejemplo:  numero=32456
+                      respuesta=6
+13) Elaborar una funcion que retorne el factorial de un numero
+Ejemplo:  numero=5
+                      respuesta=5*4*3*2*1=120
+14) Dado un arreglo de numeros presentar sus factoriales
+Ejemplo:  arreglo=[3,2,4]
+                      respuesta=6,2,24
+15) Realizar una funcion que retorne un arreglo con los numeros dentro de un 
+rango entre dos valores excluido el valor final
+ejemplo :   inicio=2  fin=8
+                    respuesta=[2,3,4,5,6,7]    
+                                 
