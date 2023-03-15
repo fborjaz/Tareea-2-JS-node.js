@@ -9,6 +9,15 @@
 </head>
 <body>
 
+    <div class="returm">
+        <a href="/calcul">
+            <button data-text="Awesome" class="button">
+                <span class="actual-text">&nbsp;regresar&nbsp;</span>
+                <span class="hover-text" aria-hidden="true">&nbsp;regresar&nbsp;</span>
+            </button>
+        </a>
+    </div>
+
     <div class="container">
         <header>
             <div class="title">
@@ -16,18 +25,54 @@
                 <p>Los números perfectos</p>
             </div>
         </header>
-
-        <section class="container">
-
+    
+        <section class="contenido">
+    
             <div class="title">
                 <h1>Saca número perfecto</h1>
             </div>
-
-            <div class="input-group">
-                <input required="" type="number" name="text" autocomplete="off" class="input">
-                <label class="user-label">Ingrese un número</label>
+    
+            <div class="opera">
+                <div class="grupo">
+                    <div class="input-group">
+                        <input required="" type="number" id="Num" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Ingrese un número</label>
+                    </div>
+                </div>
             </div>
 
+            <div class="grupoo">
+                <button onclick="cal.perfecto()">Agregar número</button>
+                <button onclick="cal.mostrarPerfectos()">Ver sumatoria</button>
+                <div class="rest" id="Rest">
+                    
+                    <div class="card">
+                        <div class="header">
+                            <div class="btn"></div>
+                            <div class="btn"></div>
+                            <div class="btn"></div>
+                            <div class="active">JS console...</div>
+                        </div>
+                        <div class="content">
+                            <div class="req">
+                                <h1 id="Resp1"></h1>
+                            </div>
+                            <div class="res error">
+                                <span>ReferenceError</span>{" <span id="Resp2"> </span>"}
+                            </div>
+                            <div class="res">
+                                Ver la suma de los número perfectos.
+                            </div>
+                            <div class="req">
+                                <h1 id="RespT"></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+    
         </section>
     </div>
 
