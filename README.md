@@ -1,21 +1,22 @@
-# 🐞 Ejercicios Propuestos v1
+# 🔴 Ejercicios Propuestos v1
 En este repositorio estaran almacenado toda la tarea #2 de logica de programcion de JS.
 
 **✦ Como puntos esta es deber, es que esta almacenado com aplicacion web, y se esta usando los soguientes lenguajes:
 
 Descripcion:
 
-1. ***:** 
-2. ***:** 
-3. **:** 
-4. **:** 
+1. **SCSS** 
+2. **CSS** 
+3. **EJS** 
+4. **JAVASCRIPT** 
+5. **LESS** 
 
 Puntos Importantes:
 
-- 🙌 
-- 🎨 
-- 📖 
-- 🏗 
+- 🙌 Trabajo en equipo
+- 🎨 Diseño dinamico
+- 📖 Desarrollo del objetico
+- 🏗 Buenas funcionalidades
 
 
 ```text
