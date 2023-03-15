@@ -30,15 +30,22 @@ header .title {
   margin-bottom: 40px;
 }
 
+header .title h1{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+
 header .title p {
   color: #9B9B9B;
+  font-size: 25px;
 }
 
 /* Section */
 
 .section {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
   width: 100%;
@@ -51,17 +58,29 @@ header .title p {
   margin: 10px;
   width: calc(33.333333% - 20px);
   position: relative;
+  margin-bottom: 20px;
 }
 
 .section .item-contenido {
-	position: absolute;
+  position: relative;
 }
 
+@media (max-width: 992px) {
+  .section .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .section .card {
+    width: calc(100% - 20px);
+  }
+}
 
 /* CARD */
 
 .item-contenido {
-  width: 190px;
+  width: 250px;
   height: 254px;
   background: #3405a3;
   border-radius: 15px;
@@ -82,7 +101,7 @@ header .title p {
   text-align: center;
   display: block;
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .item-contenido .job {
@@ -91,7 +110,7 @@ header .title p {
   display: block;
   text-align: center;
   padding-top: 3px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .item-contenido .img {
