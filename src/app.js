@@ -4,7 +4,6 @@ import { fileURLToPath } from "url";
 
 import indexRoutes from './routes/index.js'
 
-
 const app = express()
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
