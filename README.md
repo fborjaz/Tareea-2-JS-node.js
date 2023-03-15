@@ -1,16 +1,16 @@
 # 🐞 Ejercicios Propuestos v1
-.
+En este repositorio estaran almacenado toda la tarea #2 de logica de programcion de JS.
 
-**✦ 
+**✦ Como puntos esta es deber, es que esta almacenado com aplicacion web, y se esta usando los soguientes lenguajes:
 
 Descripcion:
 
-1. **base/*:** 
-2. **custom-style/*:** 
-3. **style.scss:** 
-4. **util.js:** 
+1. ***:** 
+2. ***:** 
+3. **:** 
+4. **:** 
 
-Important points:
+Puntos Importantes:
 
 - 🙌 
 - 🎨 
@@ -23,22 +23,20 @@ Proyecto_NODEJS/
 └── main/
     ├── /src
     │   ├── /routes
-    │   │   ├── /*index.js
-    │   │   │── /
-    │   │   │   ├── _
-    │   │   │   ├── _
-    │   │   │   ├── _
-    │   │   │   ├── _
-    │   │   │   ├── _
-    │   │   │   ├── _
-    │   │   │   ├── _
-    │   │   │   └── _
-    │   │   ├── _
-    │   │   ├── _
-    │   │   ├── 
-    │   │   ├── 
-    │   │   └── 
-    │   └── public/
-    │       └── util.js
-    └── app.js
+    │   │   ├── /*public
+    │   │   │   ├── /partials
+    │   │   │   │   │── /views
+    │   │   │   │   │   │── index.ejs
+    │   │   │   │   │   │    ├── 
+    │   │   │   │   │   │
+    │   │   │   │   │   │
+    │   │   │   │   │   │
+    │   │   │   │   │    
+    │   │   │   │   ├──
+    │   │   │   │   ├── 
+    │   │   │   │   ├──
+    │   │   │   │   └──
+    │   │   └── index.js
+    │   └── app.js
+    └── package.json
 ```
