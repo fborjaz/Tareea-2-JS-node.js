@@ -10,7 +10,7 @@ Descripcion:
 3. **EJS** 
 4. **JAVASCRIPT** 
 5. **LESS** 
-
+6.
 Puntos Importantes:
 
 - 🙌 Trabajo en equipo
@@ -39,5 +39,4 @@ Proyecto_NODEJS/
     │   │   │   │   └──
     │   │   └── index.js
     │   └── app.js
-    └── package.json
-```
+    └── package.json 
