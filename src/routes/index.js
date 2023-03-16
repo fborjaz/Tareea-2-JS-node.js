@@ -14,5 +14,9 @@ router.get('/N_Primos', (req, res) => res.render('N_Primos', { title: 'Calculado
 
 router.get('/Base_Exponente', (req, res) => res.render('Base_Exponente', { title: 'Calculadora' }))
 
+router.get('/Base_Exponente', (req, res) => res.render('Base_Exponente', { title: 'Calculadora' }))
+
+router.get('/Multi', (req, res) => res.render('Multi', { title: 'Calculadora' }))
+
 
 export default router

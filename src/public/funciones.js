@@ -6,10 +6,10 @@ class calcu {
     }
 
     limpiar() {
-        document.getElementById('Num1').value = ""
-        document.getElementById('Num2').value = ""
-        document.getElementById('Resp1').innerHTML = ""
-        document.getElementById('Resp2').innerHTML = ""
+        document.getElementById('Num1').value =""
+        document.getElementById('Num2').value =""
+        document.getElementById('Resp1').innerHTML =""
+        document.getElementById('Resp2').innerHTML =""
     }
 
     // Ejercicio 1, Guarda todos los numeros ingresados dentro de un arreglo y solo suma los numeros perfectos los suma y presenta
@@ -100,12 +100,12 @@ class calcu {
     }
 
     baseXExpooo() {
-        let base = parseInt(document.getElementById('base').value)  // 5
-        let expo = parseInt(document.getElementById('expo').value)  // 3
+        let base = parseInt(document.getElementById('num1').value)  // 5
+        let expo = parseInt(document.getElementById('num2').value)  // 3
 
         let multi = this.baseXExpo(base, expo)
 
-        document.getElementById("mostrar").textContent = `${base} elevado a ${expo} es: ${multi}`
+        document.getElementById("Resp1").textContent = `${base} elevado a ${expo} es: ${multi}`
     }
 
     // Ejercicio 4, Dado una serie de numeros presentar los expoentes de la elavacion del mismo numero
@@ -118,21 +118,26 @@ class calcu {
         document.getElementById("mostrar").textContent = `El numero registrar fue ${N}`
     }
 
+    calcularExponente(numero){
+    return Math.pow(numero,  numero)
+    }
+
     baseXbaseE() {
         let base = parseInt(document.getElementById('base').value)
         let expo = base
 
         this.BaseX.push(base)
+        
+        for(let c=0; c<base.length; c++){
+            let multi = this.calcularExponente(base[c])
+        }
 
-        let multi = this.baseXExpo(base, expo)
-
-        document.getElementById("mostrarr").textContent = `${base} elevado a ${expo} es: ${multi}`
+        document.getElementById("mostrarr").textContent = `el resultado de la ${base} elevada es: ${multi}`
 
     }
 
     // Ejercicio 5, Presentar la tabla de multiplicar de N numero 
-
-    PresentarMulti() {
+PresentarMulti() {
         let N = document.getElementById("N1").value;
         let multi = 0;
         let tabla = ""
@@ -144,8 +149,8 @@ class calcu {
 
         }
         document.getElementById("mostrarr").innerHTML = tabla
-    }
-
+    }   
+                        // crea un html para este ejercicio
     // Ejercicio 6, Presentar los divisores de N numeros apartir de un valor inicial
 
     SacadorDivisores(N) {
@@ -228,7 +233,5 @@ class calcu {
 
 
 }
-
-
 
 let cal = new calcu()
