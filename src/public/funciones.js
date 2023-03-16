@@ -76,7 +76,7 @@ class calcu {
             this.N_Prim.push(num1)
             d.getElementById("Resp1").textContent = `${num1} es Primo`
         } else {
-            d.getElementById("Resp1").textContent = `${num1} no es Primo`
+            d.getElementById("Resp2").textContent = `${num1} no es Primo`
         }
     }
 
