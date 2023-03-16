@@ -12,5 +12,7 @@ router.get('/Suma_N_Perfect', (req, res) => res.render('Suma_N_Perfect', { title
 
 router.get('/N_Primos', (req, res) => res.render('N_Primos', { title: 'Calculadora' }))
 
+router.get('/Base_Exponente', (req, res) => res.render('Base_Exponente', { title: 'Calculadora' }))
+
 
 export default router
