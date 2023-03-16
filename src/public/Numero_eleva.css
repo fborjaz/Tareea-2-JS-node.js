@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #212121;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Regresar */
+
+.returm {
+  margin: 15px 15px ;
+}
+
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  cursor: pointer;
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+/* Header */
+
+header {
+    padding: 45px 0;
+}
+
+header .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header .title h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+header .title p {
+    color: #9B9B9B;
+    font-size: 25px;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opera {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.operaciones{
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    gap: 5px;
+}
+
+.grupo{
+    display:flex;
+    justify-content:flex-start;
+    gap:20px;
+    height:30px;
+    margin-bottom: 35px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    margin-top: 15px;
+    width: 400px;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-label {
+    position: absolute;
+    left: 15px;
+    margin-top: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus,
+input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+}
+
+.input:focus~label,
+input:valid~label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #212121;
+    padding: 0 .2em;
+    color: #2196f3;
+}
+
+/* Botones */
+
+.grupoo {
+    margin-top: 35px;
+
+}
+
+.grupoo button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    margin-bottom: 5px;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+
+   /* card de rept */
+
+.rest {
+    margin-top: 15px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  height: 254px;
+  background: #212121;
+  margin: 0 2px;
+}
+
+.card .header {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(17, 17, 17);
+  padding-left: 5px;
+}
+
+.card .header .btn {
+  margin-left: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  cursor: pointer;
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fefe;
+  background-color: #2b2b2b;
+  height: 100%;
+  margin-left: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 12px;
+}
+
+.card .header div:nth-child(1) {
+  background-color: rgb(255, 102, 0);
+}
+
+.card .header div:nth-child(2) {
+  background-color: rgb(247, 202, 1);
+}
+
+.card .header div:nth-child(3) {
+  background-color: rgb(10, 184, 10);
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  line-height: 200%;
+  color: #fff;
+}
+
+.card .content .req, .card .content .res {
+  padding: .2em 1.6em;
+  border-bottom: 1px solid rgba(102, 101, 101, 0.685);
+  font-size: 15px;
+}
+
+.card .content .req {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  font-size: 13px;
+  color: #fff;
+}
+
+.card .content .req::before {
+  position: absolute;
+  content: "";
+  border-left: 1px solid rgb(177, 176, 176);
+  border-bottom: 1px solid rgb(177, 176, 176);
+  padding: 4px;
+  left: 2px;
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  transform: rotate(220deg);
+}
+
+.card .content .res {
+  margin-top: 4px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  color: #fff;
+}
+
+.card .content .res span:nth-child(1) {
+  color: rgb(230, 103, 103);
+  font-style: italic;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.card .content .res span:nth-child(2) {
+  color: rgb(77, 245, 43);
+}
+
+.card .content .res.error {
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+.card .content .res.error::before {
+  position: absolute;
+  content: "X";
+  padding: 3px;
+  left: 5px;
+  height: 8px;
+  width: 8px;
+  background-color: rgba(255, 0, 0, 0.644);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }

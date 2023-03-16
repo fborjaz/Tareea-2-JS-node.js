@@ -66,17 +66,17 @@ class calcu {
 
     primo() {
         let d = document
-        let num1 = parseInt(d.getElementById('Num').value)
+        let num1 = parseInt(d.getElementById('num').value)
         if (isNaN(num1) || num1 <= 0) {
-            d.getElementById("mostrar").textContent = "Por favor ingrese un número válido mayor que cero."
+            d.getElementById("Resp2").textContent = "Por favor ingrese un número válido mayor que cero."
             return
         }
 
         if (this.isPrimo(num1) == 1) {
             this.N_Prim.push(num1)
-            d.getElementById("mostrar").textContent = `${num1} es Primo`
+            d.getElementById("Resp1").textContent = `${num1} es Primo`
         } else {
-            d.getElementById("mostrar").textContent = `${num1} no es Primo`
+            d.getElementById("Resp1").textContent = `${num1} no es Primo`
         }
     }
 
@@ -86,7 +86,7 @@ class calcu {
             return
         }
         let primos = this.N_Prim
-        document.getElementById("mostrarr").textContent = `Los numeros primos de la serie ingresada son: ${primos}`
+        document.getElementById("mostrar").textContent = `Los numeros primos de la serie ingresada son: [${primos}]`
     }
 
     // Ejercicio 3, Recibe 2 valores una base y un exponente y presenta la base elevada al exponente
@@ -115,7 +115,7 @@ class calcu {
 
         this.BaseX.push(N)
 
-        document.getElementById("mostrar").textContent = `El numero registrar fue ${N}`
+        document.getElementById("Resp1").textContent = `El numero registrar fue ${N}`
     }
 
     calcularExponente(numero){
@@ -123,16 +123,19 @@ class calcu {
     }
 
     baseXbaseE() {
-        let base = parseInt(document.getElementById('base').value)
-        let expo = base
+        let base = document.getElementById('num1').value.split(",")
+        let multi, otro=[]
 
-        this.BaseX.push(base)
+        
+        console.log(base)
         
         for(let c=0; c<base.length; c++){
-            let multi = this.calcularExponente(base[c])
+          let num= this.calcularExponente(base[c])
+           console.log(num)
+           otro.push(num)
         }
 
-        document.getElementById("mostrarr").textContent = `el resultado de la ${base} elevada es: ${multi}`
+        document.getElementById("RespT").textContent = `el resultado de la base: [${base}] elevada es: [${otro}]`
 
     }
 
