@@ -5,6 +5,13 @@ class calcu {
         this.BaseX = []
     }
 
+    limpiar(){
+        document.getElementById('Num1').value=""
+        document.getElementById('Num2').value=""
+        document.getElementById('Resp1').innerHTML=""
+        document.getElementById('Resp2').innerHTML=""
+    }
+
     // Ejercicio 1, Guarda todos los numeros ingresados dentro de un arreglo y solo suma los numeros perfectos los suma y presenta
 
     sumaDivisores(num) {
@@ -19,7 +26,7 @@ class calcu {
 
     perfecto() {
         // capturar
-        let num1 = parseInt(document.getElementById('Num').value)
+        let num1 = parseInt(document.getElementById('Num1').value)
         if (isNaN(num1) || num1 <= 0) {
             document.getElementById("Resp2").textContent = "Por favor ingrese un número mayor que cero."
             return
