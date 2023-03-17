@@ -42,7 +42,8 @@ Proyecto_NODEJS/
     └── package.json 
 
 
-    ## Participantes
+## Participantes
+
 - **Arianna Alvarado - aalvarador8@unemi.edu.ec** ©
 - **Jordy Pincay - jpincaym7@unemi.edu.ec** ©
 - **Miguel García - mgarciag9@unemi.edu.ec** ©
