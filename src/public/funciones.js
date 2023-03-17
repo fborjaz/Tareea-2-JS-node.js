@@ -274,7 +274,27 @@ class calcu {
         document.getElementById("mostrar").textContent = `El ultimo digito es: ${Nums}`
     }
 
+    // Ejercicio 13, Realizar una funcion que retorno el factorial de N numero
 
+    SacarFactorial(num) {
+        let fact = 1
+        for (let i = 1; i <= num; i++) {
+            fact = fact * i
+        }
+        return fact
+    }
+
+    Factorial() {
+        let N = document.getElementById("Num").value;
+        let rest
+
+        rest = this.SacarFactorial(N)
+
+        console.log(rest)
+    }
+
+
+    
 }
 
 let cal = new calcu()
