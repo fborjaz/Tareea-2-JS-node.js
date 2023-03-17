@@ -141,7 +141,7 @@ class calcu {
 
     // Ejercicio 5, Presentar la tabla de multiplicar de N numero 
 PresentarMulti() {
-        let N = document.getElementById("N1").value;
+        let N = document.getElementById("num1").value;
         let multi = 0;
         let tabla = ""
 
