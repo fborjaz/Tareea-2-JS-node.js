@@ -295,6 +295,7 @@ class calcu {
         document.getElementById("mostrar").textContent = `El Factorial de: ${N} es: ${rest}`
     }
 
+    // Ejercicio 14, Realizar una funcion que retorne el factorial de una Serie de N
     ArregloFactorial(){
         let num1 = document.getElementById('Num').value.split(",");
         let factoriales=[]
@@ -307,7 +308,16 @@ class calcu {
 
     }
 
-    
-}
+    // Ejercicio 15, Realizar una funcion que retorne el Rango entre dos valores
+    InicioFin(){
+        let inicial=document.getElementById('Num').value;
+        let final=document.getElementById('Num2').value; 
+        let numeros=[]
+        for (let c = inicial; c < final; c++) {
+           numeros.push(c);
+          }
+          document.getElementById("mostrar").textContent =`El arreglo entre: ${inicial} y ${final} es: ${numeros}`
+        }
+    }
 
 let cal = new calcu()
