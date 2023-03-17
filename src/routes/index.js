@@ -30,4 +30,6 @@ router.get('/RetornoArreglo', (req, res) => res.render('RetornoArreglo', { title
 
 router.get('/SumadeDigito', (req, res) => res.render('SumadeDigito', { title: 'Calculadora' }))
 
+router.get('/DigitosPares', (req, res) => res.render('DigitosPares', { title: 'Calculadora' }))
+
 export default router
