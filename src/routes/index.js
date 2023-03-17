@@ -28,4 +28,6 @@ router.get('/SumaDivisores', (req, res) => res.render('SumaDivisores', { title: 
 
 router.get('/RetornoArreglo', (req, res) => res.render('RetornoArreglo', { title: 'Calculadora' }))
 
+router.get('/SumadeDigito', (req, res) => res.render('SumadeDigito', { title: 'Calculadora' }))
+
 export default router

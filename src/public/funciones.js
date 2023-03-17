@@ -231,7 +231,7 @@ PresentarMulti() {
         for (let i = 0; i < ver.length; i++) {
             suma += ver[i]
         }
-        document.getElementById("mostrarr").textContent = `La suma de los digitos de ${N} es: ${suma}`
+        document.getElementById("mostrar").textContent = `La suma de los digitos de ${N} es: ${suma}`
     }
 
 
