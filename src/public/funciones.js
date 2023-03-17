@@ -291,8 +291,21 @@ class calcu {
         rest = this.SacarFactorial(N)
 
         console.log(rest)
+
+        document.getElementById("mostrar").textContent = `El Factorial de: ${N} es: ${rest}`
     }
 
+    ArregloFactorial(){
+        let num1 = document.getElementById('Num').value.split(",");
+        let factoriales=[]
+        
+        for(let c=0; c<num1.length; c++){
+            factoriales.push(this.SacarFactorial(num1[c]))
+        }
+        
+        document.getElementById("mostrar").textContent = `El Factorial de: ${num1} es: ${factoriales}`
+
+    }
 
     
 }

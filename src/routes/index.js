@@ -36,4 +36,8 @@ router.get('/PrimerDigito', (req, res) => res.render('PrimerDigito', { title: 'C
 
 router.get('/UltimoDigito', (req, res) => res.render('UltimoDigito', { title: 'Calculadora' }))
 
+router.get('/Factorial', (req, res) => res.render('Factorial', { title: 'Calculadora' }))
+
+router.get('/ArregloFactorial', (req, res) => res.render('ArregloFactorial', { title: 'Calculadora' }))
+
 export default router
