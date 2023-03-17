@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Numero_eleva.css">
+    <title>Perfect</title>
+</head>
+<body>
+
+    <div class="returm">
+        <a href="/calcul">
+            <button data-text="Awesome" class="button">
+                <span class="actual-text">&nbsp;regresar&nbsp;</span>
+                <span class="hover-text" aria-hidden="true">&nbsp;regresar&nbsp;</span>
+            </button>
+        </a>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Presentar Retorno de Arreglo con los Divisores de</h1>
+                <p> cualquier numero con cualquier valor inicial</p>
+            </div>
+        </header>
+    
+        <section class="contenido">
+    
+            <div class="title">
+                <h1>Respuesta de Divisores</h1>
+            </div>
+    
+            <div class="opera">
+                <div class="grupo">
+                    <div class="input-group">
+                        <input required="" type="text" id="Valor" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Ingresa Numero</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="text" id="ValorInicial" name="text" autocomplete="off" class="input">
+                        <label class="user-label">Ingrese valor inicial</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupoo">
+                <button onclick="cal.PresentarValorU()">Calcular</button>
+                <a href="#">
+                    <button class="cta" onclick="cal.limpiar()">
+                        <span>Limpiar</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </a>
+
+                <div class="rest" id="Rest">
+                    
+                    <div class="card">
+                        <div class="header">
+                            <div class="btn"></div>
+                            <div class="btn"></div>
+                            <div class="btn"></div>
+                            <div class="active">JS console...</div>
+                        </div>
+                        <div class="content">
+                            <div class="req">
+                                <h1 id="Resp1"></h1>
+                            </div>
+                            <div class="res">
+                                Ver el resultado de los Divisores
+                            </div>
+                            <div class="req">
+                                <h1 id="mostrar"></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+    
+        </section>
+    </div>
+
+    <script src="/funciones.js"></script>
+</body>
+</html>

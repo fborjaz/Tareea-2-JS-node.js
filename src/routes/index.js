@@ -22,4 +22,6 @@ router.get('/Numero_Elevado', (req, res) => res.render('Numero_Elevado', { title
 
 router.get('/Multiplicacion', (req, res) => res.render('Multiplicacion', { title: 'Calculadora' }))
 
+router.get('/Arreglo_Divisores', (req, res) => res.render('Arreglo_Divisores', { title: 'Calculadora' }))
+
 export default router

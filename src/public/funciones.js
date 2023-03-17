@@ -168,7 +168,7 @@ PresentarMulti() {
 
     PresentarValorU() {
         let N = document.getElementById("Valor").value;
-        let ValorI = document.getElementById("ValorUnicial").value;
+        let ValorI = document.getElementById("ValorInicial").value;
         let Pres = "";
         let divisores = this.SacadorDivisores(N);
 
