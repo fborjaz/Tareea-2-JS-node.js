@@ -40,7 +40,7 @@ Proyecto_NODEJS/
     │   │   └── index.js
     │   └── app.js
     └── package.json 
-
+```
 
 ## Participantes
 
