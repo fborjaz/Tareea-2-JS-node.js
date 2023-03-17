@@ -182,7 +182,7 @@ PresentarMulti() {
 
     SumaDEdivisores() {
         let N = document.getElementById("Valor").value;
-        let ValorI = document.getElementById("ValorUnicial").value;
+        let ValorI = document.getElementById("ValorInicial").value;
         let Pres = "", Suma = 0;
         let divisores = this.SacadorDivisores(N);
 
@@ -193,7 +193,7 @@ PresentarMulti() {
 
         }
         document.getElementById("mostrar").innerHTML = Pres;
-        document.getElementById("mostrarr").textContent = `Y la suma de ellos es: ${Suma}`
+        document.getElementById("mostrar").textContent = `Y la suma de ellos es: ${Suma}`
     }
 
     // Ejercicio 8, Presentar Digito por Digito de N numeros
@@ -215,7 +215,7 @@ PresentarMulti() {
         let Nums = this.ConvierteDigito(N);
 
         Ver = Nums.reverse()
-        document.getElementById("mostrarr").textContent = `Los digitos serian ${Ver}`
+        document.getElementById("mostrar").textContent = `Los digitos serian ${Ver}`
     }
 
     // Ejercicio 9, Presenta la suma de todos los digitos dedo por N
