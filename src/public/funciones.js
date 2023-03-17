@@ -6,10 +6,10 @@ class calcu {
     }
 
     limpiar() {
-        document.getElementById('Num1').value =""
-        document.getElementById('Num2').value =""
-        document.getElementById('Resp1').innerHTML =""
-        document.getElementById('Resp2').innerHTML =""
+        document.getElementById('Num1').value = ""
+        document.getElementById('Num2').value = ""
+        document.getElementById('Resp1').innerHTML = ""
+        document.getElementById('Resp2').innerHTML = ""
     }
 
     // Ejercicio 1, Guarda todos los numeros ingresados dentro de un arreglo y solo suma los numeros perfectos los suma y presenta
@@ -118,21 +118,21 @@ class calcu {
         document.getElementById("Resp1").textContent = `El numero registrar fue ${N}`
     }
 
-    calcularExponente(numero){
-    return Math.pow(numero,  numero)
+    calcularExponente(numero) {
+        return Math.pow(numero, numero)
     }
 
     baseXbaseE() {
         let base = document.getElementById('num1').value.split(",")
-        let multi, otro=[]
+        let multi, otro = []
 
-        
+
         console.log(base)
-        
-        for(let c=0; c<base.length; c++){
-          let num= this.calcularExponente(base[c])
-           console.log(num)
-           otro.push(num)
+
+        for (let c = 0; c < base.length; c++) {
+            let num = this.calcularExponente(base[c])
+            console.log(num)
+            otro.push(num)
         }
 
         document.getElementById("RespT").textContent = `el resultado de la base: [${base}] elevada es: [${otro}]`
@@ -140,7 +140,7 @@ class calcu {
     }
 
     // Ejercicio 5, Presentar la tabla de multiplicar de N numero 
-PresentarMulti() {
+    PresentarMulti() {
         let N = document.getElementById("num1").value;
         let multi = 0;
         let tabla = ""
@@ -152,8 +152,8 @@ PresentarMulti() {
 
         }
         document.getElementById("mostrarr").innerHTML = tabla
-    }   
-                        // crea un html para este ejercicio
+    }
+    // crea un html para este ejercicio
     // Ejercicio 6, Presentar los divisores de N numeros apartir de un valor inicial
 
     SacadorDivisores(N) {
@@ -234,6 +234,26 @@ PresentarMulti() {
         document.getElementById("mostrar").textContent = `La suma de los digitos de ${N} es: ${suma}`
     }
 
+    // Ejercicio 10, dada una serie de digitos presentar los numeros que sean pares
+
+    SacarPares(num) {
+        let NumPares = []
+
+        for (let i = 0; i < num.length; i++) {
+            let N = parseInt(num[i])
+            if (N % 2 === 0) {
+                NumPares.push(N)
+            }
+        }
+        return NumPares
+    }
+
+    NumerosPares() {
+        let num1 = document.getElementById('Num').value
+        let Par = this.SacarPares(num1)
+
+        document.getElementById("mostrar").textContent = `Los pares de ${num1} son ${Par}`
+    }
 
 }
 
