@@ -255,6 +255,26 @@ class calcu {
         document.getElementById("mostrar").textContent = `Los pares de ${num1} son ${Par}`
     }
 
+    // ejercicio 11, dado una serie de digitos presentar el primer digito
+
+    PresesUnoNu() {
+        let N = document.getElementById("Num").value;
+        let Nums = parseInt(N.toString()[0])
+
+        document.getElementById("mostrar").textContent = `El primer digito es: ${Nums}`
+    }
+
+    // ejercicio 12, dado una serie de digitos presentar el primer digito
+
+    PresesUltiNum() {
+        let N = document.getElementById("Num").value;
+
+        let Nums = N % 10;
+
+        document.getElementById("mostrar").textContent = `El ultimo digito es: ${Nums}`
+    }
+
+
 }
 
 let cal = new calcu()
