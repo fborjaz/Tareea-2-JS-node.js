@@ -32,4 +32,8 @@ router.get('/SumadeDigito', (req, res) => res.render('SumadeDigito', { title: 'C
 
 router.get('/DigitosPares', (req, res) => res.render('DigitosPares', { title: 'Calculadora' }))
 
+router.get('/PrimerDigito', (req, res) => res.render('PrimerDigito', { title: 'Calculadora' }))
+
+router.get('/UltimoDigito', (req, res) => res.render('UltimoDigito', { title: 'Calculadora' }))
+
 export default router
